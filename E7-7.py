@@ -16,6 +16,7 @@ plt.ylabel('y-axis')
 plt.grid(True)
 # 在x轴上设置刻度
 plt.xticks(positions, labels)
-plt.plot(x, y1, color='k')
-plt.plot(x, y2, color='c')
+plt.plot(x, y1, color='k', label='y=sin(x)')
+plt.plot(x, y2, color='c', label='y=cos(x)')
+plt.legend()  # 让图例生效
 plt.show()
