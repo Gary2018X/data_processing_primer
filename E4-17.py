@@ -16,6 +16,9 @@ print("转置后的二元数组：", arr)
 arr1 = arr[:, 1:4]
 print(arr1)
 # (4)对矩阵变数arr1按行排序
-print("按行排序：", np.sort(arr1))
+# np.sort(arr1)
+# axis：数组排序时的基准，a x i s = 0 axis=0axis=0，按列排列；a x i s = 1 axis=1axis=1，按行排列
+arr1.sort(1)
+print("按行排序：", arr1)
 # (5)输出arr1各列的平均值
 print("各列平均值", arr1.mean(axis=0))
