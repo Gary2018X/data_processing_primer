@@ -4,7 +4,7 @@ import pandas as pd
 from numpy import nan as NA
 
 # ********综合练习******#
-df = pd.read_csv("http://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data", header=None)
+df = pd.read_csv("wine.data", header=None)
 df.columns = ['', 'Alcohol', 'Malic acid', 'Ash', 'Alcalinity of ash', 'Magnesium', 'Total phenols', 'Flacanoids',
               'Nonflavanoid phenols', 'Proanthocyanins', 'Color intensity', 'Hue', 'OD280/OD315 of diluted wine',
               'Proline']
