@@ -22,5 +22,5 @@ for i in range(6):
     if i == 4:
         continue
     fig.add_subplot(2, 3, i + 1)
-plt.plot(x, y)
+
 plt.show()
